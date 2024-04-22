@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>JavaScript Tutorial - const, let and var</title>        
+    </body>
+    <head>
+        <h3>In JavaScript, const, let, and var are used to declare variables, but they have some differences in terms of scope, hoisting, and mutability</h3>
+        <ul>
+            <li>
+                <b>var</b>
+                <ul>
+                    <li>Variables declared with var are function-scoped or globally scoped.</li>
+                    <li>They are hoisted to the top of their function or global scope and initialized with undefined.</li>
+                    <li>You can redeclare a variable using var within the same scope, and it won't throw an error.</li>
+                    <li>They have function-level scope, meaning they are accessible anywhere within the function in which they are declared.</li>
+                    <li>They can be reassigned and updated.</li>
+                </ul>
+            </li>
+            <li>
+                <b>let</b>
+                <ul>
+                    <li>Variables declared with let are block-scoped (scoped to the nearest enclosing curly braces {}).</li>
+                    <li>They are hoisted to the top of their block, but not initialized.</li>
+                    <li>let variables are not redeclarable within the same scope. Attempting to redeclare a variable with let in the same block scope will result in a syntax error.</li>
+                    <li>They have block-level scope, meaning they are accessible only within the block in which they are declared.</li>
+                    <li>They can be reassigned and updated.</li>
+                </ul>
+            </li>
+            <li>
+                <b>const</b>
+                <ul>
+                    <li>Variables declared with const are also block-scoped.</li>
+                    <li>They are hoisted to the top of their block, but not initialized.</li>
+                    <li>const variables must be initialized with a value at the time of declaration, and once initialized, their value cannot be changed.</li>
+                    <li>They are not redeclarable within the same scope. Attempting to redeclare a variable with const in the same block scope will result in a syntax error.</li>
+                    <li>They have block-level scope, meaning they are accessible only within the block in which they are declared.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                alert("JavaScript Tutorial - const, let and var, Please check all details in console (Ctrl + shift + i)");
+            });
+        </script>
+    </head>
+</html>
