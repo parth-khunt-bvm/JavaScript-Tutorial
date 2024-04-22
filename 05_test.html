@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>JavaScript Tutorial - Test</title>
+    </body>
+    <head>
+        <h3>JavaScript Tutorial - Test</h3>
+        <ul>
+            <li>
+                <span>Q1. Create a variable of type string and attempt to add a number to it.</span>
+                <ul>
+                    <li>Answer :<br>
+                        let string = "Hello";<br>
+                        let number = 42;<br>
+                        let result = string + number;<br>
+                        console.log("Output will be ="+ result);
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <span>Q2. To determine the datatype of a string using the typeof operator</span>
+                <ul>
+                    <li>Answer :<br>
+                        let str = "Hello, Good Evening";<br>
+                        console.log(typeof str);
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <span>Q3. Create a const it to hold a object in Javascript Can you change number later?</span>
+                <ul>
+                    <li>Answer :<br>
+                        const myObject = { number: 5 };<br>
+                        myObject.number = 10;<br>
+                        console.log(myObject);
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <span>Q4. Try to add a new key to the const object</span>
+                <ul>
+                    <li>Answer :<br>
+                        const obj = { number: 5 };<br>
+                        myObject.newKey = "newValue";<br>
+                        console.log(obj);
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                alert("JavaScript Tutorial - Variables, Please check all details in console (Ctrl + shift + i)");
+                console.log('Q1. Create a variable of type string and attempt to add a number to it.');
+                let string = "Hello";
+                let number = 42;
+                let result = string + number;
+                console.log("Output will be = " + result);
+                console.log('');
+                console.log('Q2. To determine the datatype of a string using the typeof operator');
+                let str = "Hello, Good Evening";
+                console.log(typeof str);
+                console.log('');
+                console.log('Q3. Create a const it to hold a object in Javascript Can you change number later?');
+                const myObject = { number: 5 };
+                myObject.number = 10;
+                console.log(myObject);
+                console.log('');
+                console.log('Q4. Try to add a new key to the const object');
+                const obj = { number: 5 };
+                obj.newKey = 'New Key';
+                console.log(obj);
+            });
+        </script>
+    </head>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <title>JavaScript Tutorial - data types</title>
+    </body>
+
+    <head>
+        <h3>A data type is an attribute associated with a piece of data that tells a computer system how to interpret its value.</h3>
+        <ul>
+            <li>Primitives Data-type
+                <ul>
+                    <li>Null <br>Ex: let nullType = null;</li>
+                    <li>Number <br>Ex: let numberType = 10; </li>
+                    <li>Boolen <br>Ex: let boolenType = null; </li>
+                    <li>Bigint <br>Ex: let bigintType = BigInt("576"); </li>
+                    <li>Symbol <br>Ex: let symbolType = Symbol("This is symbol data type"); </li>
+                    <li>String <br>Ex: let stringType = "Hello, Good Evening"; </li>
+                    <li>Undefined <br>Ex: let undefinedType  = undefined ; </li>
+                </ul>
+            </li>
+            <li>Object Data-type
+                <ul>
+                    <li>Object
+                        <br>let student = {
+                            name : 'Parth Khunt',
+                            age : 27,
+                            city : 'Surat',
+                            dob : '10-April-1996',
+                        };
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                alert("JavaScript Tutorial - data types, Please check all details in console (Ctrl + shift + i)");
+
+                let nullType = null;
+                let numberType = 10; 
+                let boolenType = true; 
+                let bigintType = BigInt("576"); 
+                let symbolType = Symbol("This is symbol data type"); 
+                let stringType = "Hello, Good Evening"; 
+                let undefinedType  = undefined ; 
+                let student = {
+                    name : 'Parth Khunt',
+                    age : 27,
+                    city : 'Surat',
+                    dob : '10-April-1996',
+                }
+
+                console.log("Value of is nullType "+ nullType + ".Data type for that "+ typeof nullType );
+                console.log("Value of is numberType "+ numberType + ".Data type for that "+ typeof numberType );
+                console.log("Value of is boolenType "+ boolenType + ".Data type for that "+ typeof boolenType );
+                console.log("Value of is bigintType "+ bigintType + ".Data type for that "+ typeof bigintType );
+                console.log("Value of is symbolType ")
+                console.log(symbolType)
+                console.log("Data type for that "+ typeof symbolType );
+                console.log("Value of is stringType "+ stringType + ".Data type for that "+ typeof stringType );
+                console.log("Value of is undefinedType "+ undefinedType + ".Data type for that "+ typeof undefinedType );
+                console.log("");
+                console.log("Object Data type");
+                console.log("Value of is student ");
+                console.log(student);
+                console.log("Data type for that "+ typeof student );
+            });
+        </script>
+    </head>
+</html>
