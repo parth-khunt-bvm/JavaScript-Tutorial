@@ -4,14 +4,81 @@
         <title>JavaScript Tutorial - Variables</title>
     </body>
     <head>
+        <h3>JavaScript Tutorial - Variables</h3>
+        <span>Variables are Containers for Storing Data</span>
+        <span>JavaScript Variables can be declared in 4 ways</span>
+        <ul>
+            <li>
+                <span>Automatically</span>
+                <ul>
+                    <li>Exmple<br>x = 5;<br>y = 6;<br>z = x + y;<br>Output will be = 11</li>
+                </ul>
+            </li>
+            <li>
+                <span>Using var</span>
+                <ul>
+                    <li>Exmple<br>var x = 5;<br>var y = 6;<br>var z = x + y;<br>Output will be = 11</li>
+                </ul>
+            </li>
+            <li>
+                <span>Using let</span>
+                <ul>
+                    <li>Exmple<br>let no1 = 5;<br>let no2 = 6;<br>let total = no1 + no2;<br>Output will be = 11</li>
+                </ul>
+            </li>
+            <li>
+                <span>Using const</span>
+                <ul>
+                    <li>Exmple<br>const price1 = 5;<br>const price2 = 6;<br>const totalPrice = price1 + price2;<br>Output will be = 11</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3><b>Note :</b></h3>
+        <ul>
+            <li>The 'var' keyword was used in all JavaScript code from 1995 to 2015.</li>
+            <li>The 'let' and 'const' keywords were added to JavaScript in 2015.</li>
+            <li>The 'var' keyword should only be used in code written for older browsers.</li>
+            <li>It's a good programming practice to declare all variables at the beginning of a script.</li>
+        </ul>
+
+        <h3><b>JavaScript Identifiers :</b></h3>
+        <ul>
+            <li>All JavaScript variables must be identified with unique names.</li>
+            <li>These unique names are called identifiers.</li>
+            <li>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</li>
+        </ul>
+        <h3><b>The general rules for constructing names for variables (unique identifiers) are:</b></h3>
+        <ul>
+            <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+            <li>Names must begin with a letter.</li>
+            <li>Names can also begin with $ and _ symbol.</li>
+            <li>Names are case sensitive (y and Y are different variables).</li>
+            <li>Reserved words (like 'JavaScript', 'break', 'case', 'catch', 'class') cannot be used as names.</li>
+        </ul>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 alert("JavaScript Tutorial - Variables, Please check all details in console (Ctrl + shift + i)");
-                console.log("JavaScript is the world's most popular client programming language.");
-                console.log("JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.");
-                console.log("First appeared	: December 4, 1995");
-                console.log("ECMAScript is a standard for scripting languages, including JavaScript, JScript, and ActionScript. It is best known as a JavaScript standard intended to ensure the interoperability of web pages across different web browsers");
-                console.log("ECMAScript 6 (ES6) is widely supported across browsers.");
+                x = 5;
+                y = 6;
+                z = x + y;
+                console.log("Output will be = " + z + "using Automatically");
+
+                var x = 5;
+                var y = 6;
+                var z = x + y;
+                console.log("Output will be = " + z + " using var");
+
+                let  no1 = 5;
+                let  no2 = 6;
+                let  total = no1 + no2;
+                console.log("Output will be = " + total + " using var");
+
+                const price1 = 5;
+                const price2 = 6;
+                const totalPrice = price1 + price2;
+                console.log("Output will be = " + totalPrice + " using const");
+                
             });
         </script>
     </head>
