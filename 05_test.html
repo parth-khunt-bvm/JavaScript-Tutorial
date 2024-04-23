@@ -49,31 +49,86 @@
                     </li>
                 </ul>
             </li>
+            
+            <li>
+                <span>Q5. write a js program to create a word meaning dictionary of 5 words.</span>
+                <ul>
+                    <li>Answer :<br>
+<pre>
+let dictionary = {
+    "apple": "A fruit that grows on trees and is typically round, red, yellow, or green in color.",
+    "computer": "An electronic device capable of performing various tasks through the execution of programmed instructions.",
+    "cat": "A small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws.",
+    "book": "A written or printed work consisting of pages glued or sewn together along one side and bound in covers.",
+    "sun": "The star around which the Earth orbits, providing light and heat to the Earth."
+};<br>
+searchWord("apple");
+searchWord("computer");
+searchWord("dog"); 
+
+function searchWord(word) {
+    if (dictionary.hasOwnProperty(word)) {
+        console.log("Meaning of '" + word + "': " + dictionary[word]);
+    } else {
+        console.log("Word '" + word + "' not found in the dictionary.");
+    }
+}
+
+
+</pre>
+                    </li>
+                </ul>
+            </li>
         </ul>
 
         
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 alert("JavaScript Tutorial - Variables, Please check all details in console (Ctrl + shift + i)");
+
                 console.log('Q1. Create a variable of type string and attempt to add a number to it.');
                 let string = "Hello";
                 let number = 42;
                 let result = string + number;
                 console.log("Output will be = " + result);
                 console.log('');
+
                 console.log('Q2. To determine the datatype of a string using the typeof operator');
                 let str = "Hello, Good Evening";
                 console.log(typeof str);
                 console.log('');
+
                 console.log('Q3. Create a const it to hold a object in Javascript Can you change number later?');
                 const myObject = { number: 5 };
                 myObject.number = 10;
                 console.log(myObject);
                 console.log('');
+
                 console.log('Q4. Try to add a new key to the const object');
                 const obj = { number: 5 };
                 obj.newKey = 'New Key';
                 console.log(obj);
+                console.log('');
+               
+                console.log('Q4. write a js program to create a word meaning dictionary of 5 words');
+                let dictionary = {
+                    "apple": "A fruit that grows on trees and is typically round, red, yellow, or green in color.",
+                    "computer": "An electronic device capable of performing various tasks through the execution of programmed instructions.",
+                    "cat": "A small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws.",
+                    "book": "A written or printed work consisting of pages glued or sewn together along one side and bound in covers.",
+                    "sun": "The star around which the Earth orbits, providing light and heat to the Earth."
+                };
+                searchWord("apple");
+                searchWord("computer");
+                searchWord("dog"); 
+
+                function searchWord(word) {
+                    if (dictionary.hasOwnProperty(word)) {
+                        console.log("Meaning of '" + word + "': " + dictionary[word]);
+                    } else {
+                        console.log("Word '" + word + "' not found in the dictionary.");
+                    }
+                }                
             });
         </script>
     </head>
